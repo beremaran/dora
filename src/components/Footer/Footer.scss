@@ -1,0 +1,18 @@
+@import '../../styles/index';
+
+.Footer {
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: center;
+  padding: 16px;
+
+  a {
+    color: $black-color;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
