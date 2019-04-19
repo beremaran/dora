@@ -1,7 +1,10 @@
 @import '../../styles/index';
 
 .Button {
-  padding: 16px 32px;
+  width: 140px;
+  height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 
   &-primary {
     background-color: $color-primary;
@@ -10,6 +13,14 @@
 
   &-secondary {
     background-color: $color-secondary;
-    color: $black-color;
+    color: $white-color;
   }
+
+  &:disabled {
+    background-color: $gray-color;
+  }
+}
+
+.Button + .Button {
+  margin-left: 16px;
 }

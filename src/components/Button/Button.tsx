@@ -8,15 +8,22 @@ type Props = JSX.IntrinsicElements['button'] & {
   secondary?: boolean;
 };
 
-const Button: FunctionComponent<Props> = ({ primary, secondary, className, children, ...rest }) => {
+const Button: FunctionComponent<Props> = ({
+  primary,
+  secondary,
+  className,
+  disabled,
+  children,
+  ...rest
+}) => {
   const classNames = cx(
     'Button',
-    { 'Button-primary': primary, 'Button-secondary': secondary },
+    { 'Button-primary': primary, 'Button-secondary': secondary, 'Button-Disabled': disabled },
     className,
   );
 
   return (
-    <button className={classNames} {...rest}>
+    <button className={classNames} disabled={disabled} {...rest}>
       {children}
     </button>
   );
