@@ -34,7 +34,6 @@
     "format:check": "prettier -c 'src/**/*.{ts,tsx}'",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "deploy": "sh deploy.sh"
   },
   "eslintConfig": {
     "extends": "react-app"
