@@ -1,0 +1,12 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 16px;
+
+  span {
+    font-family: 'Copse', serif;
+    font-size: 36px;
+  }
+}
